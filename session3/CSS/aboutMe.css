@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "양진체";
+  src: url("https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: #bfdaf7;
 }
@@ -19,6 +27,11 @@ body {
   border-radius: 20px;
 }
 
+#header p {
+  margin: 10px 0 0 25px;
+  font-size: 25px;
+}
+
 section {
   display: flex;
   align-items: start;
@@ -31,6 +44,17 @@ section {
   border-radius: 30px;
   margin-top: 40px;
   margin-left: 70px;
+}
+
+#info img {
+  margin: 22px 0 0 22px;
+  border-radius: 20px;
+  width: 85%;
+}
+
+.info-title {
+  font-size: 30px;
+  margin: 20px 0 0 25px;
 }
 
 .box-cover {
@@ -108,11 +132,22 @@ section {
   justify-content: space-evenly;
 }
 
+.hobby-font p {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
 #play {
   width: 200px;
   height: 330px;
   background: white;
   border-radius: 30px;
+}
+
+#play img {
+  margin-top: -15px;
+  margin-left: 35px;
+  border-radius: 10px;
 }
 
 #tmi,
@@ -144,4 +179,12 @@ section {
 #tmi,
 #box3 {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.info-title,
+.like-title,
+.hobby-title,
+.ex-title,
+.play-title {
+  margin-bottom: 5px;
 }
