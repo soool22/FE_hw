@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+}
+
+#header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#header img {
+  margin-left: 110px;
+  align-items: center;
+}
+
+.header-font {
+  width: 100%;
+  margin: 0 140px 0 70px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 990px) {
+  .header-font {
+    display: none;
+  }
+
+  .hamburger-menu,
+  .my-page {
+    display: block !important;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.my-page {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  width: 30px;
+  height: 30px;
+}
+
+.main-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: bottom;
+  border-bottom: 1px solid lightgray;
+  display: block;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.search-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  max-width: 600px;
+}
+
+.shortcut {
+  width: 100%;
+  height: 175px;
+  background-color: #f4f3f0;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+.sc b {
+  font-size: 14px;
+  color: grey;
+}
+
+.sc div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.section {
+  width: 100%;
+  height: 480px;
+  max-width: 1200px;
+  margin: 50px auto 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.notice {
+  width: 50%;
+  height: 100%;
+}
+
+.banner {
+  width: 50%;
+  height: 100%;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.banner img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+}
+
+.no-title {
+  display: flex;
+  align-items: flex-end;
+  height: 50px;
+  justify-content: space-between;
+}
+.letter {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.gongji {
+  font-size: 27px;
+}
+
+.no {
+  font-size: 13px;
+  color: gray;
+}
+
+.moonhwa p {
+  margin: 0;
+  font-size: 22px;
+  display: flex;
+  align-items: flex-end;
+}
+.moonhwa {
+  margin-left: 40px;
+}
+
+.calt {
+  height: 11px;
+  font-size: 11px;
+  color: gray;
+  display: flex;
+  align-items: center;
+}
+
+.all-post {
+  margin-top: 10px;
+  border-top: 2px solid black;
+}
+
+.post {
+  height: 60px;
+
+  border-bottom: 1px solid gray;
+}
+
+.post-tit {
+  display: block;
+  width: 100%;
+  padding: 10px 25px 0;
+  margin: 0;
+}
+
+.post-tit p {
+  margin: 0;
+}
+
+.post-day {
+  display: block;
+  padding: 2px 0 0 25px;
+  color: gray;
+}
+
+#go_top img {
+  position: fixed;
+  left: 90%;
+  bottom: 30px;
+  z-index: 9990;
+  width: 62px;
+  height: 67px;
+  display: block;
+}
+
+@media (max-width: 990px) {
+  .sc {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .sc div {
+    width: 23%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .shortcut {
+    height: auto;
+    padding: 20px 0;
+  }
+}
